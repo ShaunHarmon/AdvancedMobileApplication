@@ -6,8 +6,11 @@
     background-color: cornflowerblue;
 }
 
+.row {
+    height: 200px;
+}
+
 .logo{
     bottom: 0px;
     right: 0px;
-
 }
