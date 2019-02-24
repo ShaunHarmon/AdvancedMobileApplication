@@ -1,6 +1,7 @@
 .banner{
     text-align: center;
-    font-size: 10vw;
+    font-size: 5vw;
+    width: 100%;
     margin:auto;
     height: 150px;
     background-color: cornflowerblue;
