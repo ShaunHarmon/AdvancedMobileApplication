@@ -4,52 +4,98 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 text-center">
-          <h1>Column 1</h1>
-          <p>I have used a 3 column grid in the large format. Included in this column is a h1 header and paragraph.</p>
-        </div>
-        
         <div class="col-md-4">
-            <h1 class="text-center">Column 2</h1>
-            <form action="">
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-              </div>
-              <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-              </div>
-              <div class="checkbox">
-                <label><input type="checkbox" name="remember"> Remember me</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="submit" class="btn btn-default">Cancel</button>
-            </form>
+          <img class="logo" src="assets/logo-placeholder.png" height="100px">
+        </div>
+        <div class="banner col-md-8"></div>       
+      </div>
+
+      <nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+
+      <div class="row"> 
+        <div class="col-lg-6">
+          <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" src="assets/placeholder-600x400.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-md-5">
-          <h1 class="text-center">Column 3</h1>
-          <img src="assets/landscape.jpg" class="img-responsive center-block" alt="Hd landscape">
+        <div class="col-lg-6">
+          <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" src="assets/placeholder-600x400.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block" height="300" width="400" src="assets/placeholder-600x400.png" alt="Generic placeholder image">
+            </div>
+            <div class="col-md-7">
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="footer col-sm-2 col-sm-offset-9"> 
+        <div class="col-sm-4">
+          <img height="50" width="50" src="assets/placeholder-600x400.png">
+        </div>
+        <div class="col-sm-4">
+          <img height="50" width="50" src="assets/placeholder-600x400.png">
+        </div>
+        <div class="col-sm-4">
+            <img height="50" width="50" src="assets/placeholder-600x400.png">
         </div>
       </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    
   </body>
 </html>
