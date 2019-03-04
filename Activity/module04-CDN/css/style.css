@@ -1,0 +1,16 @@
+.banner{
+    text-align: center;
+    font-size: 5vw;
+    margin:auto;
+    height: 100px;
+    background-color: cornflowerblue;
+}
+
+.logo{
+    vertical-align: bottom;
+    margin: 0 auto;
+}
+
+.row{
+    margin:25px;
+}
