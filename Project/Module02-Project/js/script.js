@@ -11,6 +11,7 @@ window.addEventListener('load', function () {
     
     }
     if(result === 'granted'){
+      console.log("GRANTED");
       var notification = new Notification("NEW GALLERY!");   
     }
   });
