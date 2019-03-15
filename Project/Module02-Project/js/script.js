@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
     }
     if(result === 'granted'){
       var notification = new Notification("NEW GALLERY!");
-      return;
+      
     }
   });
 
