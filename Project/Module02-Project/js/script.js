@@ -10,10 +10,11 @@ window.addEventListener('load', function () {
       console.log('The permission request was dismissed.');
     
     }
-    if(result === 'granted'){
-      console.log("GRANTED");
+    if(result === 'granted'){   
       var notification = new Notification("NEW GALLERY!");   
+      console.log("GRANTED");
     }
+
   });
 
   });
