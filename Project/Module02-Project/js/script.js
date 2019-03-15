@@ -1,25 +1,26 @@
 window.addEventListener('load', function () {
-    // At first, let's check if we have permission for notification
-    // If not, let's ask for it
-    if (window.Notification && Notification.permission !== "granted") {
-      Notification.requestPermission(function (status) {
-        if (Notification.permission !== status) {
-          Notification.permission = status;
-        }
-      });
-      
-    }
-  
-    if (window.Notification && Notification.permission === "granted") {
-    var i = 0;
-    // Using an interval cause some browsers (including Firefox) are blocking notifications if there are too much in a certain time.
-    var interval = window.setInterval(function () {
-        // Thanks to the tag, we should only see the "Hi! 9" notification 
-        var n = new Notification("NEW GALLERY! ");
-        if (i++ == 9) {
-        window.clearInterval(interval);
-        }
-    }, 200);
+    if (!("Notification" in window)) {
+        alert("This browser does not support desktop notification");
+      }
+    
+      // Let's check whether notification permissions have already been granted
+      else if (Notification.permission === "granted") {
+        // If it's okay let's create a notification
+        var notification = new Notification("Hi there!");
+      }
+    
+      // Otherwise, we need to ask the user for permission
+      else if (Notification.permission !== "denied") {
+        Notification.requestPermission().then(function (permission) {
+          // If the user accepts, let's create a notification
+          if (permission === "granted") {
+            var notification = new Notification("Hi there!");
+          }
+        });
+      }
+    
+      // At last, if the user has denied notifications, and you 
+      // want to be respectful there is no need to bother them any more.
     }
 
   });
