@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     // Using an interval cause some browsers (including Firefox) are blocking notifications if there are too much in a certain time.
     var interval = window.setInterval(function () {
         // Thanks to the tag, we should only see the "Hi! 9" notification 
-        var n = new Notification("Hi! " + i, {tag: 'soManyNotification'});
+        var n = new Notification("NEW GALLERY! ");
         if (i++ == 9) {
         window.clearInterval(interval);
         }
